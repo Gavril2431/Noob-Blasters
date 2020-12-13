@@ -1,5 +1,7 @@
                                    #### HOUSE PRICE PREDICTION ####
 
+getwd()
+
 #install packages
 install.packages("shiny")
 
@@ -46,7 +48,7 @@ server <- function(input, output) {
   data2 = reactiveValues()
   observeEvent(input$go,{
     
-    data = read.csv("D:/Pendrive Data/DATA/Data-set/new house data 2.csv")
+    data = read.csv("House price prediction data-set.csv")
     View(data)
     summary(data)
     str(data)
